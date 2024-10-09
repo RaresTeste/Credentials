@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pythonapp-pod
+  labels:
+    app: pythonapp
+spec:
+  containers:
+  - name: pythonapp-container
+    image: constanttkrm/pythonapp:latest
+    ports:
+    - containerPort: 80
